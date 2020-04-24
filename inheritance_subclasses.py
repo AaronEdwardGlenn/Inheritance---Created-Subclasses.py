@@ -71,4 +71,8 @@ print(mananger_1.pay)
 mananger_1.apply_raise()
 print(mananger_1.pay)
 
+mananger_1.add_employee(dev_2)
+
+mananger_1.remove_employee(dev_1)
+
 mananger_1.print_employees()

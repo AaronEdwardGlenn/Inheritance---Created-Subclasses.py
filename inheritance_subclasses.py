@@ -16,14 +16,14 @@ class Employee:
         return('{}, {}'.format(self.first, self.last))
 
     def apply_raise(self):
-        self.pay = int(self.pay * Employee.raise_amount)
+        self.pay = int(self.pay * self.raise_amount)
 
 
 class Developer(Employee):
-    pass
+    raise_amount = 1.8
 
 
-dev_1 = Employee('Aaron', 'Glenn', 100)
+dev_1 = Developer('Aaron', 'Glenn', 100)
 dev_2 = Employee('Test', 'User', 200)
 
 print(dev_1.email)
@@ -31,4 +31,6 @@ print(dev_2.email)
 
 # method revolution order is the order in which python looks for class attributes. it first looks at the class itslef, then parent class (inherited class), then the builtins.
 
-print(help(Developer))
+print(dev_1.pay)
+dev_1.apply_raise()
+print(dev_1.pay)

@@ -28,3 +28,7 @@ dev_2 = Employee('Test', 'User', 200)
 
 print(dev_1.email)
 print(dev_2.email)
+
+# method revolution order is the order in which python looks for class attributes. it first looks at the class itslef, then parent class (inherited class), then the builtins.
+
+print(help(Developer))

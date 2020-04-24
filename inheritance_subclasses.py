@@ -48,7 +48,7 @@ class Manager(Employee):
 
     def print_employees(self):
         for employees in self.employees:
-            print('-->', employee.fullname())
+            print('-->', employees.fullname())
 
 
 dev_1 = Developer('Aaron', 'Glenn', 100, 'Python')
@@ -71,4 +71,4 @@ print(mananger_1.pay)
 mananger_1.apply_raise()
 print(mananger_1.pay)
 
-print(mananger_1.email)
+mananger_1.print_employees()
